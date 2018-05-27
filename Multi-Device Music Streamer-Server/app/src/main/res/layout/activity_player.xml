@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.raj.streamerhotspoter.Player">
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Play / Pause"
+        android:id="@+id/control"
+        android:layout_marginBottom="82dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=">>"
+        android:id="@+id/seekForward"
+        android:layout_alignTop="@+id/control"
+        android:layout_toRightOf="@+id/control"
+        android:layout_toEndOf="@+id/control" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="&lt;&lt;"
+        android:id="@+id/seekBackward"
+        android:layout_alignTop="@+id/control"
+        android:layout_toLeftOf="@+id/control"
+        android:layout_toStartOf="@+id/control" />
+
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/seeker"
+        android:layout_marginBottom="42dp"
+        android:indeterminate="false"
+        android:layout_above="@+id/control"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/album"
+        android:layout_alignEnd="@+id/album" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/album"
+        android:layout_alignLeft="@+id/seekBackward"
+        android:layout_alignStart="@+id/seekBackward"
+        android:layout_above="@+id/seeker"
+        android:layout_alignRight="@+id/seekForward"
+        android:layout_alignEnd="@+id/seekForward" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/title"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/seeker"
+        android:layout_alignEnd="@+id/seeker" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sync"
+        android:id="@+id/sync"
+        android:layout_below="@+id/title"
+        android:layout_toLeftOf="@+id/control"
+        android:layout_toStartOf="@+id/control" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lag"
+        android:id="@+id/lag"
+        android:layout_below="@+id/title"
+        android:layout_toRightOf="@+id/timeView"
+        android:layout_toEndOf="@+id/timeView" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/timeView"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/control"
+        android:layout_toRightOf="@+id/seekBackward"
+        android:layout_toEndOf="@+id/seekBackward" />
+
+</RelativeLayout>
