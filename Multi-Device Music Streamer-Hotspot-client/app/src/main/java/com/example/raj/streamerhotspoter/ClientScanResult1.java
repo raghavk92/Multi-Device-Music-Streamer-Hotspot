@@ -1,7 +1,7 @@
 package com.example.raj.streamerhotspoter;
 import java.net.InetAddress;
 /**
- * Created by Raj on 5/8/2015.
+ * Created by Raghav on 5/8/2015.
  */
 public class ClientScanResult1 {
 
