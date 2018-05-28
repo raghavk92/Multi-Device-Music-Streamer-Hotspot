@@ -3,10 +3,10 @@ Android app for streaming music simultaneously on 2 or more android devices and 
 
 Made as a project while in university.
 People Who worked on the project are  :
-Raghav Kumar
-Rohan Rawat
-Pratyush Mayank
-Vipul Goyal
+Raghav Kumar, 
+Rohan Rawat, 
+Pratyush Mayank, 
+Vipul Mishra
 
 Got help from other open source projects credited below:
 -> NsdHelper -https://android.googlesource.com/platform/development/+/master/samples/training/NsdChat/src/com/example/android/nsdchat/NsdHelper.java
